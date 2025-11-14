@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Dosis', sans-serif;
+  background-color: #FA8072;
+}
+
+.dosis-regular {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+}
+
+.dosis-light {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+}
+
+.bitter-thin {
+  font-family: 'Bitter', serif;
+  font-weight: 100;
+}
+
+.bitter-light {
+  font-family: 'Bitter', serif;
+  font-weight: 300;
+}
+
+.charcoal {
+  color: #36454F;
+}
+
+.charcoal-opacity {
+  color: rgba(54, 69, 79, 0.75);
+}
+
+/* Scrolling animation for food images */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-container {
+  display: flex;
+  width: fit-content;
+  animation: scroll 60s linear infinite;
+  gap: 1rem;
+}
+
+.scroll-container:hover {
+  animation-play-state: paused;
+}
+
+.food-image {
+  flex-shrink: 0;
+  width: 10rem;
+  height: 10rem;
+}
+
+@media (max-width: 640px) {
+  .food-image {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
