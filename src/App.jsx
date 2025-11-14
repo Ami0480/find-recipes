@@ -335,17 +335,17 @@ function App() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <header className="fixed top-0 left-0 z-50 p-6">
+      <header className="fixed top-0 left-0 z-50 p-4 sm:p-6">
         <button
           onClick={scrollToTop}
-          className="flex items-center justify-center w-14 h-14 hover:opacity-90 transition-opacity cursor-pointer"
+          className="flex items-center justify-center w-10 h-10 sm:w-14 sm:h-14 hover:opacity-90 transition-opacity cursor-pointer"
           aria-label="Return to home"
           type="button"
         >
           <img
             src="/pantry.svg"
             alt="Pantry Logo"
-            className="w-12 h-12 object-contain"
+            className="w-8 h-8 sm:w-12 sm:h-12 object-contain"
           />
         </button>
       </header>
@@ -417,9 +417,23 @@ function App() {
         {/* Results Section */}
         {showResults && (
           <section id="results" className="mt-12">
-            <h2 className="dosis-regular text-2xl text-white font-semibold text-center mb-8">
-              Recipes Found
-            </h2>
+            <div className="flex items-center justify-center gap-3 mb-8">
+              <button
+                onClick={scrollToTop}
+                className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 hover:opacity-90 transition-opacity cursor-pointer flex-shrink-0"
+                aria-label="Return to home"
+                type="button"
+              >
+                <img
+                  src="/pantry.svg"
+                  alt="Pantry Logo"
+                  className="w-6 h-6 sm:w-8 sm:h-8 object-contain"
+                />
+              </button>
+              <h2 className="dosis-regular text-xl sm:text-2xl text-white font-semibold">
+                Recipes Found
+              </h2>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {renderResults()}
             </div>

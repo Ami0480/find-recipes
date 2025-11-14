@@ -73,6 +73,10 @@ body {
     width: 8rem;
     height: 8rem;
   }
+  
+  .scroll-container {
+    animation: scroll 40s linear infinite;
+  }
 }
 
 /* Smooth scroll behavior */
