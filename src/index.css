@@ -3,32 +3,32 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Dosis', sans-serif;
-  background-color: #FA8072;
+  font-family: "Dosis", sans-serif;
+  background-color: #fa8072;
 }
 
 .dosis-regular {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 400;
 }
 
 .dosis-light {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 300;
 }
 
 .bitter-thin {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-weight: 100;
 }
 
 .bitter-light {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-weight: 300;
 }
 
 .charcoal {
-  color: #36454F;
+  color: #36454f;
 }
 
 .charcoal-opacity {
@@ -73,9 +73,9 @@ body {
     width: 8rem;
     height: 8rem;
   }
-  
+
   .scroll-container {
-    animation: scroll 40s linear infinite;
+    animation: scroll 30s linear infinite;
   }
 }
 
@@ -83,4 +83,3 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
